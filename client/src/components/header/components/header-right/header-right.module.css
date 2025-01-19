@@ -1,0 +1,27 @@
+.headerRightContainer,
+.contactInfo,
+.favLink {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactInfo__address {
+    margin: 0 31px;
+}
+
+.contactInfo {
+    margin: 0 136px;
+}
+
+.favLink {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+}
+
+.heartIcon {
+    width: 27px;
+    height: 24px;
+    margin: 0 12px;
+}

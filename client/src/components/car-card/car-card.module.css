@@ -1,0 +1,207 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 0 37px;
+    max-width: 445px;
+}
+
+.card.isFavPage {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0 0 24px;
+    max-width: 100%;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.card__imgContainer {
+    position: relative;
+    margin: 0 0 26px;
+    max-width: 445px;
+    max-height: 310px;
+    border: 1px solid #d9d9d9;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card__imgContainer.isFavPage {
+    padding: 1px;
+    border-radius: 12px;
+    margin: 0 20px 0 0;
+}
+
+img.notAvailable {
+    opacity: .3;
+}
+
+.card__notAvailable {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 237px;
+    height: 59px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 15px;
+}
+
+.card__imgContainer img {
+    width: 100%;
+    height: 100%;
+}
+
+.card__info.isFavPage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 834px;
+    margin: 0 0 20px;
+}
+
+.card__description {
+    margin: 0 0 16px;
+    color: #595959;
+}
+
+.card__brand,
+.card__yearColor {
+    margin: 0 0 12px;
+}
+
+.card__yearColor {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #595959;
+}
+
+.card__yearColor.isFavPage {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 0 34px;
+}
+
+.card__year {
+    margin: 0 14px 0 0;
+}
+
+.card__year.isFavPage {
+    margin: 0 0 16px;
+}
+
+.card__info {
+    margin: 0 0 20px;
+}
+
+.card__controlPanel {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.card__buyBtn {
+    margin: 0 25px 0 0;
+}
+
+.favBtn,
+.favBtn svg,
+.favBtn svg path {
+    transition: background-color .2s ease-in-out, fill .2s ease-in-out, stroke .2s ease-in-out;
+}
+
+.favBtn {
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.favBtn:disabled {
+    cursor: default;
+}
+
+.favBtn:disabled svg {
+    stroke: #D9D9D9;
+}
+
+.favBtn:disabled svg path {
+    fill: none;
+}
+
+.favBtn svg path {
+    transform: translateX(-.15px);
+}
+
+.favBtn.isFav svg {
+    stroke: none;
+}
+
+.favBtn.isFav svg path {
+    fill: #240C86;
+}
+
+.favBtn svg path {
+    fill: none;
+}
+
+.favBtn svg {
+    width: 29px;
+    height: 28px;
+    stroke: #000;
+}
+
+.favBtn:not(.isFav):not(:disabled):hover svg {
+    stroke: none;
+}
+
+.favBtn:not(.isFav):not(:disabled):hover svg path {
+    fill: #4F2CD9;
+}
+
+.favBtn:not(:disabled):active svg {
+    stroke: none;
+}
+
+.favBtn:not(:disabled):active svg path {
+    fill: #240C86;
+}
+
+.favBtn.isFavPage {
+    width: 56px;
+    height: 57px;
+    border: 2px solid #D73737;
+    border-radius: 5px;
+}
+
+.favBtn.isFavPage svg {
+    width: 18px;
+    height: 19px;
+}
+
+.favBtn.isFavPage svg path {
+    fill: #D73737;
+}
+
+.favBtn.isFavPage:hover {
+    background-color: #D73737;
+}
+
+.favBtn.isFavPage:hover svg path {
+    fill: #fff;
+}
+
+.favBtn.isFavPage:active {
+    background-color: #B72121;
+}
+
+.favBtn.isFavPage:active svg path {
+    fill: #fff;
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Сначала в наличии",
+    "value": "01",
+    "key": "availability",
+    "type": "boolean"
+  },
+  {
+    "title": "По имени (A-Z)",
+    "value": "02",
+    "key": "brand",
+    "type": "stringAZ"
+  },
+  {
+    "title": "По имени (Z-A)",
+    "value": "03",
+    "key": "brand",
+    "type": "stringZA"
+  },
+  {
+    "title": "Сначала новее",
+    "value": "04",
+    "key": "model_year",
+    "type": "numberZA"
+  },
+  {
+    "title": "Сначала старше",
+    "value": "05",
+    "key": "model_year",
+    "type": "numberAZ"
+  },
+  {
+    "title": "Сначала дешевле",
+    "value": "06",
+    "key": "price",
+    "type": "numberAZ"
+  },
+  {
+    "title": "Сначала дороже",
+    "value": "07",
+    "key": "price",
+    "type": "numberZA"
+  }
+]
