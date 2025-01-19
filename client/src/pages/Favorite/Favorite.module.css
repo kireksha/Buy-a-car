@@ -1,0 +1,10 @@
+.favContainer__header {
+    margin: 0 0 64px;
+    padding: 0 0 26px;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #000;
+    border-bottom: 1px solid #D9D9D9;
+}
